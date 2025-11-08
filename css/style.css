@@ -1145,12 +1145,23 @@ footer .col .social-icons i:hover {
     margin-top: 20px;
   }
 
+
+
   .contact-cont .contact-text {
-    padding-left: 20px;
+    padding-left: 40px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 
-  .contact-cont .map {
-    width: 50%;
+  .contact-cont .map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-cont {
+    width: 100%;
+    flex-direction: column;
   }
 
   .contact-form {
