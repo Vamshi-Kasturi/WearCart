@@ -12,7 +12,6 @@
 }
 html {
   width: 100%;
-  overflow-x: hidden;
 }
 
 :root {
@@ -103,7 +102,7 @@ button.normal {
 }
 
 .header .header-logo img {
-  width: 50px;
+  width: 200px;
 }
 
 .header .navbar ul {
@@ -266,7 +265,7 @@ button.normal {
   padding: 6px 8px;
   border-radius: 50%;
   border: 1px solid #088178;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .feature-pro .pro-cont .pro-card .cart-icon:hover {
@@ -859,6 +858,127 @@ footer .col .social-icons i:hover {
   margin: 0;
 }
 
+.cart-table{
+  width: 100%;
+}
+
+.cart-table .table table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+ 
+.cart-table .table table img{
+  width: 100px;
+}
+
+.cart-table .table table thead{
+  border-top : 1px solid #c4bfbf;
+  border-bottom: 1px solid #c4bfbf;
+}
+
+.cart-table .table table thead th{
+  padding: 20px 0px ;
+}
+
+.cart-table .table table tbody td{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.cart-table .table table tbody td input{
+  width: 50px;
+  border: 1px solid #c4bfbf;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.coupon-cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.coupon-cart .apply-coupon{
+  width: 45%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.coupon-cart .apply-coupon .apply{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 0 20px;
+}
+
+.coupon-cart .apply-coupon .apply input{
+  width: 250px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.coupon-cart .apply-coupon .apply button{
+  background-color: #088178;
+  padding: 10px 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.coupon-cart .apply-coupon .apply button:hover{
+  background-color: white;
+  color: #088178;
+  border: 1px solid #088178;
+}
+
+.coupon-cart .cart-total{
+  width: 50%;
+  border: 1px solid #bebfc1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.coupon-cart .cart-total table{
+  margin: 30px 0 30px 20px;
+  border: 1px solid #bec2d1;
+  padding: 10px;
+  border-collapse: collapse;
+  width: 90%;
+
+}
+
+.coupon-cart .cart-total table td{
+  padding: 10px 20px;
+  border: 1px solid #bec2d1;
+  width: 50%;
+}
+
+.coupon-cart .cart-total button{
+   background-color: #088178;
+  padding: 10px 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.coupon-cart .cart-total button:hover{
+  background-color: white;
+  color: #088178;
+  border: 1px solid #088178;
+}
+
+
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 20px 40px;
@@ -1064,6 +1184,33 @@ footer .col .social-icons i:hover {
   .contact-form .employees .emp .emp-det {
     align-items: center;
   }
+
+  .cart-table .table table tbody td:nth-child(3) {
+    text-wrap: wrap;
+}
+
+.coupon-cart .apply-coupon {
+    width: 49%;
+    padding: 20px 20px;
+    border: 1px solid #bec2d1;
+    border-radius: 10px;
+    height: 335px;
+}
+
+.coupon-cart .apply-coupon .apply {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coupon-cart .apply-coupon .apply button {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+
+
+
+
 }
 
 @media (max-width: 477px) {
@@ -1253,6 +1400,39 @@ footer .col .social-icons i:hover {
 .contact-form .employees {
     flex-direction: column;
 }
+
+.cart-table .table{
+  overflow-x: auto;
+}
+.cart-table .table table {
+  
+    table-layout:auto ;
+}
+
+.cart-table .table table img {
+    width: 70px;
+}
+
+.cart-table .table table tbody td:nth-child(3) {
+    margin: 10px 10px;
+}
+
+
+
+.coupon-cart {
+    flex-direction: column;
+}
+
+.coupon-cart .apply-coupon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.coupon-cart .cart-total {
+    width: 100%;
+}
+
 
 
 }
